@@ -23,23 +23,6 @@
         align-items: center;
         height: 80vh;
 
-        .role-tag {
-            position: relative;
-            font-size: 14px;
-            text-transform: uppercase;
-            color: var(--blue);
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 2px;
-                left: -10px;
-                width: 2px;
-                height: 15px;
-                background-color: var(--highlight);
-            }
-        }
-
         .landing-title{
             font-family: var(--cursive);
             font-size: 48px;

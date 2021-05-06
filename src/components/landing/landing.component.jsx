@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Tag from '../tag/tag.component';
+
 import './landing.styles.scss';
 
 const Landing = () => (
@@ -12,7 +14,7 @@ const Landing = () => (
             </ul>
         </nav>
         <div className='landing-content'>
-            <p className='role-tag'>Front End Developer</p>
+            <Tag text='Front End Developer' />
             <h1 className='landing-title'>
                 Khalem <br />
                 Connaughton
