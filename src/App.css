@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Yeseva+One&display=swap');
 
+:root {
+    --cursive: 'Yeseva One', cursive;
+    --sans: 'Alata', sans-serif;
+    --light: #fff;
+    --dark: #131315;
+    --blue: #747585;
+    --highlight: #001AFF;
+}
+
+body {
+    font-family: var(--sans);
+}
