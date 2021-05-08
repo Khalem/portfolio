@@ -16,6 +16,7 @@ const WorkSamples = () => (
                 ))
             }
         </div>
+        <h2 className='view-all'>View All Projects</h2>
     </section>
 );
 
