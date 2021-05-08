@@ -14,7 +14,7 @@ const Landing = () => (
             </ul>
         </nav>
         <div className='landing-content'>
-            <Tag text='Front End Developer' />
+            <Tag text='Front End Developer' margin={false}/>
             <h1 className='landing-title'>
                 Khalem <br />
                 Connaughton
