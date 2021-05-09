@@ -1,0 +1,42 @@
+.contact {
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--dark);
+    color: var(--light);
+
+    .contact-title {
+        font-family: var(--cursive);
+        font-size: 64px;
+        font-weight: 400;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+    .email-container {
+        margin: 75px 0 50px 0;
+
+        .email-desc {
+            max-width: 393px;
+            line-height: 30px;
+            margin: 0 auto;
+            color: var(--blue);
+        }
+    }
+
+    .socials-container {
+        padding: 0 0 75px 0;
+
+        .social-title {
+            text-transform: lowercase;
+        }
+
+        .social-icons {
+            margin: 25px 0 0 0;
+
+            .social-icon {
+                margin: 0 23px;
+            }
+        }
+    }
+}

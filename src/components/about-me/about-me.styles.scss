@@ -21,9 +21,11 @@
     }
 
     .about-me-text {
+        font-size: 18px;
         color: var(--light);
         text-align: center;
-        width: 285px;
+        width: 393px;
+        line-height: 30px;
 
         &:nth-of-type(1){
             margin: 50px 0 10px 0;
