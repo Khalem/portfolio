@@ -1,17 +1,4 @@
 .work-samples {
-    .work-samples-title {
-        font-family: var(--cursive);
-        font-size: 48px;
-        font-weight: 400;
-        text-align: center;
-        text-transform: lowercase;
-        color: var(--blue);
-
-        @media screen and (min-width: 768px) {
-            font-size: 64px;
-        }
-    }
-
     .projects-container{
         width: 90%;
         margin: 92px auto;

@@ -5,30 +5,24 @@
     align-items: center;
     background-color: var(--dark);
 
-    .about-me-title {
-        font-family: var(--cursive);
-        font-size: 64px;
-        font-weight: 400;
-        text-align: center;
-        color: var(--light);
-        margin: 0 0 69px 0;
-        text-transform: lowercase;
-    }
-
     // change avatar background color
     #Color\/Palette\/Blue-01 {
         fill: var(--blue);
     }
 
     .about-me-text {
+        width: 85%;
         font-size: 18px;
-        color: var(--light);
         text-align: center;
-        width: 393px;
         line-height: 30px;
+        color: var(--light);
 
         &:nth-of-type(1){
             margin: 50px 0 10px 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 393px;
         }
     }
 }

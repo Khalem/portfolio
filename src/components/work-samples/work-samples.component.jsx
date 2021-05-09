@@ -5,10 +5,11 @@ import Project from '../project/project.component';
 import { homepageProjects } from '../../data/projects.data';
 
 import './work-samples.styles.scss';
+import Title from '../title/title.component';
 
 const WorkSamples = () => (
     <section className='work-samples'>
-        <h1 className='work-samples-title'>Work Samples</h1>
+        <Title text='Work Samples' color='var(--blue)' />
         <div className='projects-container'>
             {
                 homepageProjects.map((project, index) => (

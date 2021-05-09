@@ -1,12 +1,13 @@
 import React from 'react';
-
 import { Linkedin, Codepen, GitHub } from 'react-feather';
+
+import Title from '../title/title.component';
 
 import './contact.styles.scss';
 
 const Contact = () => (
     <section className='contact'>
-        <h1 className='contact-title'>Get in Touch</h1>
+        <Title text='Get in Touch' color='var(--light)' />
         <div className='email-container'>
             <p className='email'>khalem.connaughton@gmail.com</p>
             <p className='email-desc'>The best way to get in touch is through email. My emails are checked regularly and receive a response as soon as possible.</p>

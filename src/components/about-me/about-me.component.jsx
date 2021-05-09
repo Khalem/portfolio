@@ -3,10 +3,11 @@ import React from 'react';
 import Avatar from 'avataaars';
 
 import './about-me.styles.scss';
+import Title from '../title/title.component';
 
 const AboutMe = () => (
     <section className='about-me'>
-        <h1 className='about-me-title'>About Me</h1>
+        <Title text='About Me' color='var(--light)' />
         <Avatar
             style={{width: '200px', height: '200px'}}
             avatarStyle='Circle'
