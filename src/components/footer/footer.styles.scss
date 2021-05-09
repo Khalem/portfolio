@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--grey);
+    padding: 35px 0;
+    text-align: center;
+
+    .created-by {
+        position: relative;
+        text-decoration: none;
+        color: var(--light);
+        word-spacing: 5px;
+
+        .created-by-text {
+            margin: 0 20px;
+        }
+
+        .heart {
+            position: absolute;
+            top: -30px;
+            left: 36.5%;
+            margin-top: 30px;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
