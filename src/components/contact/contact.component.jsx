@@ -7,7 +7,7 @@ import './contact.styles.scss';
 
 const Contact = () => (
     <section className='contact'>
-        <Title text='Get in Touch' color='var(--light)' />
+        <Title text='Get in Touch' color='var(--light)' textAlign='center' />
         <div className='email-container'>
             <p className='email'>khalem.connaughton@gmail.com</p>
             <p className='email-desc'>The best way to get in touch is through email. My emails are checked regularly and receive a response as soon as possible.</p>

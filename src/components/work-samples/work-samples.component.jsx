@@ -10,7 +10,7 @@ import './work-samples.styles.scss';
 
 const WorkSamples = ({ history }) => (
     <section className='work-samples'>
-        <Title text='Work Samples' color='var(--blue)' />
+        <Title text='Work Samples' color='var(--blue)' textAlign='center' />
         <div className='projects-container'>
             {
                 homepageProjects.map((project, index) => (

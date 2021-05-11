@@ -7,7 +7,7 @@ import Title from '../title/title.component';
 
 const AboutMe = () => (
     <section className='about-me'>
-        <Title text='About Me' color='var(--light)' />
+        <Title text='About Me' color='var(--light)' textAlign='center' />
         <Avatar
             style={{width: '200px', height: '200px'}}
             avatarStyle='Circle'
