@@ -1,0 +1,20 @@
+.nav {
+    text-align: center;
+
+    ul {
+        margin: 0;
+        padding: 30px 0;
+
+        li {
+            display: inline-block;
+            font-size: 18px;
+            margin: 0 41px;
+            color: var(--blue);
+            cursor: pointer;
+        }
+        
+        .active {
+            color: var(--highlight);
+        }
+    }
+}

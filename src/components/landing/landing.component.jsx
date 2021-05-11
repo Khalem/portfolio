@@ -6,13 +6,6 @@ import './landing.styles.scss';
 
 const Landing = () => (
     <header className='landing'>
-        <nav className='homepage-nav'>
-            <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
         <div className='landing-content'>
             <Tag text='Front End Developer' margin={false}/>
             <h1 className='landing-title'>

@@ -29,6 +29,14 @@ const Projects = () => {
                     ))
                 }
             </div>
+            <Title text='Just for Fun' color='var(--blue)' />
+            <div className='for-fun-container'>
+                {
+                    justForFunProjects.map((project, index) => (
+                        <ProjectMin project={project} key={`${project.name}-${index}`} handleClick={handleClick} index={index + allProjects.length} clicked={clicked} />
+                    ))
+                }
+            </div>
         </section>
     );
 };

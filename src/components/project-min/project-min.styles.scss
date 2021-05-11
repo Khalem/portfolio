@@ -37,6 +37,30 @@
             }
         }
     }
+
+    .heroku-warning {
+        display: none;
+
+        @media only screen and (min-width: 1280px) {
+            display: initial;
+            position: absolute;
+            width: 416px;
+            top: -25%;
+            left: 35%;
+            color: var(--dark);
+            opacity: .2;
+    
+            .heroku-warning-title {
+                font-size: 36px;
+                font-weight: 400;
+            }
+    
+            p {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    }
 }
 
 .move-project {

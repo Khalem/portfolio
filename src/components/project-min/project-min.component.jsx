@@ -1,5 +1,5 @@
 import React from 'react';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'react-feather';
 
 import './project-min.styles.scss';
@@ -55,6 +55,16 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
                         </motion.a>
                     </div>
                 </motion.div>
+                : null
+            }
+            {
+                // display loading warning for projects hosted on heroku - won't show on mobile
+                index === clicked && heroku ?
+                <div className='heroku-warning'>
+                    <h2 className='heroku-warning-title'>NOTE:</h2>
+                    <p>This project may take a few seconds to load as it’s hosted on Heroku.</p>
+                    <p>The project could potentially be ‘asleep’.</p>
+                </div>
                 : null
             }
         </div>
