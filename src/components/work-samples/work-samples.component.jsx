@@ -1,13 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 import Project from '../project/project.component';
+import Title from '../title/title.component';
 
 import { homepageProjects } from '../../data/projects.data';
 
 import './work-samples.styles.scss';
-import Title from '../title/title.component';
 
-const WorkSamples = () => (
+const WorkSamples = ({ history }) => (
     <section className='work-samples'>
         <Title text='Work Samples' color='var(--blue)' />
         <div className='projects-container'>
@@ -17,8 +18,8 @@ const WorkSamples = () => (
                 ))
             }
         </div>
-        <h2 className='view-all'>View All Projects</h2>
+        <h2 className='view-all' onClick={() => history.push('/projects')}>View All Projects</h2>
     </section>
 );
 
-export default WorkSamples;
+export default withRouter(WorkSamples);
