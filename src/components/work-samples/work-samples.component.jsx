@@ -9,7 +9,7 @@ import { homepageProjects } from '../../data/projects.data';
 import './work-samples.styles.scss';
 
 const WorkSamples = ({ history }) => (
-    <section className='work-samples'>
+    <section className='work-samples' id='work_samples'>
         <Title text='Work Samples' color='var(--blue)' textAlign='center' />
         <div className='projects-container'>
             {
