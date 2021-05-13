@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.62b0f679.chunk.css",
+    "main.js": "/portfolio/static/js/main.f586fff9.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f586fff9.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.c5e7d570.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c5e7d570.js.map",
+    "static/js/2.5f91e77a.chunk.js": "/portfolio/static/js/2.5f91e77a.chunk.js",
+    "static/js/2.5f91e77a.chunk.js.map": "/portfolio/static/js/2.5f91e77a.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.62b0f679.chunk.css.map": "/portfolio/static/css/main.62b0f679.chunk.css.map",
+    "static/js/2.5f91e77a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5f91e77a.chunk.js.LICENSE.txt",
+    "static/media/music-app.jpg": "/portfolio/static/media/music-app.0a4a5a15.jpg",
+    "static/media/nidore.jpg": "/portfolio/static/media/nidore.b0e918f3.jpg",
+    "static/media/typing-test.jpg": "/portfolio/static/media/typing-test.cb9f3457.jpg",
+    "static/media/weather-app.jpg": "/portfolio/static/media/weather-app.286ea6af.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c5e7d570.js",
+    "static/js/2.5f91e77a.chunk.js",
+    "static/css/main.62b0f679.chunk.css",
+    "static/js/main.f586fff9.chunk.js"
+  ]
+}
