@@ -10,7 +10,7 @@ export const homepageProjects = [
     },
     {
         name: 'Typing Speed Test',
-        bio: 'A 1 minute tpying speed test that keeps track of your characters per minute. Built with React.',
+        bio: 'A 1 minute typing speed test that keeps track of your characters per minute. Built with React.',
         codeUrl: 'https://github.com/Khalem/typing-speed-test',
         liveSite: 'https://khalem.github.io/typing-speed-test/',
         image: require('../assets/images/typing-test.jpg').default,
@@ -47,7 +47,7 @@ export const allProjects = [
     },
     {
         name: 'Typing Speed Test',
-        bio: 'A 1 minute tpying speed test that keeps track of your characters per minute. Built with React.',
+        bio: 'A 1 minute typing speed test that keeps track of your characters per minute. Built with React.',
         codeUrl: 'https://github.com/Khalem/typing-speed-test',
         liveSite: 'https://khalem.github.io/typing-speed-test/',
         heroku: false,

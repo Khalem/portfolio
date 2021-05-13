@@ -46,11 +46,29 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
                 >
                     <p className='project-bio'>{bio}</p>
                     <div className='project-links'>
-                        <motion.a href={liveSite} target='_blank' className='project-link' initial='rest' whileHover='hover' animate='rest'>
-                            View Site <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                        <motion.a 
+                            href={liveSite} 
+                            target='_blank' 
+                            className='project-link' 
+                            initial='rest' 
+                            whileHover='hover' 
+                            animate='rest'
+                            rel="noreferrer"
+                        >
+                            View Site 
+                            <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
                         </motion.a>
-                        <motion.a href={codeUrl} target='_blank' className='project-link' initial='rest' whileHover='hover' animate='rest'>
-                            View Code <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                        <motion.a 
+                            href={codeUrl} 
+                            target='_blank' 
+                            className='project-link' 
+                            initial='rest' 
+                            whileHover='hover' 
+                            animate='rest'
+                            rel="noreferrer"
+                        >
+                            View Code 
+                            <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
                         </motion.a>
                     </div>
                 </motion.div>

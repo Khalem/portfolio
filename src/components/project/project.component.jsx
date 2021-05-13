@@ -16,17 +16,6 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
         flexClass = 'row';
     }
 
-    const infoVariants = {
-        hidden: {
-            opacity: 0,
-            y: -100
-        },
-        visible: {
-            opacity: 1,
-            y: 0
-        }
-    };
-
     const iconVariants = {
         rest: {
             rotate: 0
@@ -50,6 +39,7 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
                         animate='rest'
                         href={liveSite} 
                         target='_blank'
+                        rel="noreferrer"
                     >
                         View Site 
                         <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
@@ -60,6 +50,7 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
                         animate='rest'
                         href={codeUrl} 
                         target='_blank'
+                        rel="noreferrer"
                     >
                         View Code 
                         <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>

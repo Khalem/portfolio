@@ -1,7 +1,6 @@
 .title {
-    font-family: var(--cursive);
+    font-family: var(--sans-title);
     font-size: 48px;
-    font-weight: 400;
     text-transform: lowercase;
 
     @media screen and (min-width: 768px) {

@@ -32,7 +32,7 @@ const Landing = () => {
                     Khalem <br />
                     Connaughton
                 </motion.h1>
-                <motion.p className='landing-secondary' variants={childrenVariants}>Hi. I’m a 23 year old web developer based out of Meath.</motion.p>
+                <motion.p className='landing-secondary' variants={childrenVariants}>Hi. I’m a 23 year old front end developer based out of Ireland.</motion.p>
             </motion.div>
         </header>
     );
