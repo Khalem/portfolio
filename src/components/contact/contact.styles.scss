@@ -32,6 +32,12 @@
 
             .social-icon {
                 margin: 0 23px;
+
+                &:hover {
+                    svg {
+                        stroke: var(--highlight);
+                    }
+                }
             }
         }
     }

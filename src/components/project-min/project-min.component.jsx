@@ -18,10 +18,9 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
 
     const iconVariants = {
         rest: {
-            x: 0
+            rotate: 0
         },
         hover: {
-            x: 10,
             rotate: 45
         }
     }
@@ -48,10 +47,10 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
                     <p className='project-bio'>{bio}</p>
                     <div className='project-links'>
                         <motion.a href={liveSite} target='_blank' className='project-link' initial='rest' whileHover='hover' animate='rest'>
-                            Live Site <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                            View Site <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
                         </motion.a>
                         <motion.a href={codeUrl} target='_blank' className='project-link' initial='rest' whileHover='hover' animate='rest'>
-                            Code <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                            View Code <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
                         </motion.a>
                     </div>
                 </motion.div>

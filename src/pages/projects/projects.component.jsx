@@ -46,7 +46,7 @@ const Projects = () => {
 
     return (
         <section className='projects'>
-            <Title text='Projects' color='var(--blue)' />
+            <Title text='Projects' color='var(--highlight)' />
             <motion.div
                 initial='hidden'
                 animate='visible'
@@ -66,7 +66,7 @@ const Projects = () => {
                     ))
                 }
             </motion.div>
-            <Title text='Just for Fun' color='var(--blue)' />
+            <Title text='Just for Fun' color='var(--highlight)' />
             <motion.div
                 initial='hidden'
                 animate='visible'

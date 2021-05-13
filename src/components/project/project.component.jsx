@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import Tag from '../tag/tag.component';
 import { ArrowUpRight } from 'react-feather';
@@ -15,6 +16,26 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
         flexClass = 'row';
     }
 
+    const infoVariants = {
+        hidden: {
+            opacity: 0,
+            y: -100
+        },
+        visible: {
+            opacity: 1,
+            y: 0
+        }
+    };
+
+    const iconVariants = {
+        rest: {
+            rotate: 0
+        },
+        hover: {
+            rotate: 45
+        }
+    }
+
     return (
         <FadeInWhenVisible>
             <div className={`project-container ${flexClass}`}>
@@ -23,8 +44,26 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
                     <Tag text={tag} margin={true} />
                     <h1 className='project-title'>{name}</h1>
                     <p className='project-desc'>{bio}</p>
-                    <a href={liveSite} target='_blank'>View Site <span className='arrow'><ArrowUpRight color='var(--blue)' /></span></a>
-                    <a href={codeUrl} target='_blank'>View Code <span className='arrow'><ArrowUpRight color='var(--blue)' /></span></a>
+                    <motion.a
+                        initial='rest' 
+                        whileHover='hover' 
+                        animate='rest'
+                        href={liveSite} 
+                        target='_blank'
+                    >
+                        View Site 
+                        <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                    </motion.a>
+                    <motion.a
+                        initial='rest' 
+                        whileHover='hover' 
+                        animate='rest'
+                        href={codeUrl} 
+                        target='_blank'
+                    >
+                        View Code 
+                        <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
+                    </motion.a>
                 </div>
             </div>
         </FadeInWhenVisible>
