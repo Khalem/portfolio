@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
 
     @media screen and (min-width: 1024px) {
@@ -10,6 +9,7 @@
 
         &:nth-of-type(2n) {
             flex-direction: row;
+            border: 1px solid red;
         }
     }
 
@@ -84,5 +84,21 @@
                 text-transform: lowercase;
             }
         }
+    }
+}
+
+.row {
+    flex-direction: column;
+    
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.row-reverse {
+    flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row-reverse;
     }
 }

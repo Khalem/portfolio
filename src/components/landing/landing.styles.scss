@@ -4,7 +4,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        padding: 0 0 10vh 0;
+        height: 70vh;
 
         .landing-title{
             font-family: var(--cursive);
@@ -21,14 +22,6 @@
             text-align: center;
             margin: 32px 0;
             color: var(--blue);
-        }
-
-        .landing-cta {
-            font-size: 18px;
-            text-transform: uppercase;
-            margin: 81px 0;
-            color: var(--dark);
-            cursor: pointer;
         }
     }
 }

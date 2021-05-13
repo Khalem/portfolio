@@ -14,7 +14,7 @@ const WorkSamples = ({ history }) => (
         <div className='projects-container'>
             {
                 homepageProjects.map((project, index) => (
-                    <Project project={project} key={index} />
+                    <Project project={project} key={index} index={index+1} />
                 ))
             }
         </div>
