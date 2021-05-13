@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'react-feather';
 
 import './project-min.styles.scss';
 
-const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, clicked, handleClick }) => {
+const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, clicked, handleClick, childrenVariants }) => {
     const infoVariants = {
         hidden: {
             opacity: 0,
@@ -27,7 +27,7 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
     }
 
     return (
-        <div className={`project ${index === clicked + 1 && clicked !== null ? 'move-project' : '' }`}>
+        <motion.div className={`project ${index === clicked + 1 && clicked !== null ? 'move-project' : '' }`} variants={childrenVariants}>
             <motion.h2 
                 className='project-title' 
                 onClick={() => handleClick(index)} 
@@ -67,7 +67,7 @@ const ProjectMin = ({ project: { name, bio, liveSite, codeUrl, heroku }, index, 
                 </div>
                 : null
             }
-        </div>
+        </motion.div>
     );
 };
 

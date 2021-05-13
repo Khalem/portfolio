@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import './title.styles.scss';
 
-const Title = ({ text, color, textAlign='left' }) => {
+const Title = ({ text, color, textAlign='left', delay=2 }) => {
     const variants = {
         hidden: {
             opacity: 0,
@@ -11,7 +11,7 @@ const Title = ({ text, color, textAlign='left' }) => {
         visible: {
             opacity: 1,
             transition: {
-                delay: 2,
+                delay,
                 duration: 1
             }
         }
