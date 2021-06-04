@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { analytics } from '../../firebase/firebase.utils';
+
 import Tag from '../tag/tag.component';
+import FadeInWhenVisible from '../fade-in-when-visible/fade-in-when-visible.component';
 import { ArrowUpRight } from 'react-feather';
 
 import './project.styles.scss';
-import FadeInWhenVisible from '../fade-in-when-visible/fade-in-when-visible.component';
 
 const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index }) => {
     let flexClass = '';
@@ -23,7 +25,11 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
         hover: {
             rotate: 45
         }
-    }
+    };
+
+    const handleClick = e => {
+        analytics.logEvent(`${name} ${e.target.name}`);
+    };
 
     return (
         <FadeInWhenVisible>
@@ -39,7 +45,9 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
                         animate='rest'
                         href={liveSite} 
                         target='_blank'
-                        rel="noreferrer"
+                        rel='noreferrer'
+                        name='viewed-site'
+                        onClick={handleClick}
                     >
                         View Site 
                         <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>
@@ -50,7 +58,9 @@ const Project = ({ project: { name, bio, tag, liveSite, codeUrl, image }, index 
                         animate='rest'
                         href={codeUrl} 
                         target='_blank'
-                        rel="noreferrer"
+                        rel='noreferrer'
+                        name='viewed-code'
+                        onClick={handleClick}
                     >
                         View Code 
                         <motion.span className='arrow' variants={iconVariants}><ArrowUpRight color='var(--highlight)' /></motion.span>

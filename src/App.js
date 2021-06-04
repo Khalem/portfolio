@@ -13,9 +13,9 @@ const App = () => {
   <Fragment>
     <Nav />
     <Switch>
-      <Route exact path='/portfolio' component={HomePage} />
+      <Route exact path='/' component={HomePage} />
       <Route exact path='/projects' component={Projects} />
-      <Redirect from='*' to='/portfolio' />
+      <Redirect from='*' to='/' />
     </Switch>
     <Footer />
   </Fragment>
